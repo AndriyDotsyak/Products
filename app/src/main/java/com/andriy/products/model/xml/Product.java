@@ -1,17 +1,15 @@
-package com.andriy.products.controller;
+package com.andriy.products.model.xml;
 
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.Root;
 
-@Root(name = "product")
-public class Products {
+@Root(name = "product", strict = false)
+public class Product {
 
     @Element(name = "id")
     private String id;
-
     @Element(name = "name")
     private String name;
-
     @Element(name = "price")
     private String price;
 
