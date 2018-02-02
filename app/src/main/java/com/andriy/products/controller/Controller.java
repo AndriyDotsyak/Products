@@ -1,20 +1,22 @@
 package com.andriy.products.controller;
 
-import com.andriy.products.View.RecycleView;
+import android.app.Activity;
+import android.support.v7.widget.RecyclerView;
+
+import com.andriy.products.View.RVShow;
 import com.andriy.products.View.View;
 import com.andriy.products.model.Model;
-import com.andriy.products.model.xml.Product;
 import com.andriy.products.model.xml.XMLProducts;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class Controller {
-    Model model = new XMLProducts();
-    View view = new RecycleView();
+    private Model model = new XMLProducts();
+    private View view = new RVShow();
 
-    public void execute() {
-        List<Product> products = model.getProducts();
-        //view.showProducts(products);
+    public void getData(Activity activity) {
+         model.getProducts(activity);
+    }
+
+    public void outData(Activity activity, RecyclerView recyclerView) {
+        view.showProducts(activity, recyclerView);
     }
 }

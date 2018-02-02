@@ -1,9 +1,7 @@
 package com.andriy.products.model;
 
-import com.andriy.products.model.xml.Product;
-
-import java.util.List;
+import android.app.Activity;
 
 public interface Model {
-    List<Product> getProducts();
+    void getProducts(Activity activity);
 }
