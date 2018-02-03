@@ -1,10 +1,13 @@
 package com.andriy.products;
 
+import android.content.Context;
 import android.content.Intent;
+import android.location.LocationManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 import com.andriy.products.controller.Controller;
 
@@ -22,6 +25,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         btnDownloadXML.setOnClickListener(this);
         btnProductList.setOnClickListener(this);
+
+        LocationManager locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
+        boolean networkEnabled = locationManager.isProviderEnabled(LocationManager.NETWORK_PROVIDER);
+
+        if (!networkEnabled) {
+            Toast.makeText(this.getApplicationContext(), "Присоединитесь к интернету!", Toast.LENGTH_LONG).show();
+        }
     }
 
     @Override

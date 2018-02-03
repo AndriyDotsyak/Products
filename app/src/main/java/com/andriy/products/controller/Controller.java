@@ -3,7 +3,7 @@ package com.andriy.products.controller;
 import android.app.Activity;
 import android.support.v7.widget.RecyclerView;
 
-import com.andriy.products.View.RVShow;
+import com.andriy.products.View.RecyclerView.RVShow;
 import com.andriy.products.View.View;
 import com.andriy.products.model.Model;
 import com.andriy.products.model.xml.XMLProducts;

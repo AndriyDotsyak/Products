@@ -2,4 +2,7 @@
     <string name="app_name">Продукты</string>
     <string name="btn_download_xml_text">Загрузить xml</string>
     <string name="btn_product_list">Cписок продуктов</string>
+    <string name="title_activity_producst_list">ProducstList</string>
+    <string name="title_activity_change_price">ChangePrice</string>
+    <string name="change_price_btn_ok">OK</string>
 </resources>

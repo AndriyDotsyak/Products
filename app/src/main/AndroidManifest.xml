@@ -18,9 +18,20 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ProductList">
+        <activity android:name=".ProductsList">
             <intent-filter>
                 <action android:name="android.intent.ProductList" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ChangePrice"
+            android:label="Цена:"
+            android:theme="@style/Theme.AppCompat.Dialog">
+            <intent-filter>
+                <action android:name="android.intent.ChangePrice" />
+
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>

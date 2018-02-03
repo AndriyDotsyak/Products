@@ -1,33 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_item_list"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="25dp"
+    android:paddingTop="15dp">
 
     <TextView
         android:id="@+id/txt_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="35dp"
-        android:layout_marginStart="40dp"
         android:text="name"
-        android:textAlignment="textStart"
-        android:textSize="18sp"
-        tools:ignore="RtlCompat" />
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
 
     <TextView
         android:id="@+id/txt_price"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/txt_name"
-        android:layout_alignStart="@+id/txt_name"
-        android:layout_below="@+id/txt_name"
         android:text="price"
-        android:textAlignment="textStart"
-        android:textSize="18sp"
-        tools:ignore="RtlCompat" />
-</RelativeLayout>
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+
+</LinearLayout>
